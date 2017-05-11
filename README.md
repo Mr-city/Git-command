@@ -23,6 +23,7 @@ git add -u 在仓库任务目录下提交所有未跟踪的文件
 
 ```
 <br/>
+
 >**git commit -m "content"**
 
 ```
@@ -30,6 +31,7 @@ git add -u 在仓库任务目录下提交所有未跟踪的文件
 ```
 
 <br/>
+
 >**git status**  
 >**git diff**
 
@@ -38,6 +40,7 @@ git status 时刻掌握仓库当前的状态
 git diff 查看修改的内容 
 ```
 <br/>
+
 >**git log**  
 >**git reset --hard HEAD^**
 
