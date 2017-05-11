@@ -20,14 +20,15 @@
 git add [file] [file] 提交指定单个 或多个 文件  
 git add . 提交当前目录下所有未跟踪的文件  
 git add -u 在仓库任务目录下提交所有未跟踪的文件
-
 ```
 <br/>
 
->**git commit -m "content"**
+>**git commit -m "content"**  
+>**git commit -am "content"**
 
 ```
 文件的最后提交 -m 是提交说明 必须写
+-am 直接提交修改的文件 不用在add到暂存
 ```
 
 <br/>
@@ -54,3 +55,4 @@ git reset 回退版本
 
 
 
+![ls](ls.png) 
