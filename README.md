@@ -57,7 +57,8 @@ git diff 查看修改的内容
 ```
 git log查看提交日志  
 git reflog 查看命令历史，以便确定要回到未来的哪个版本  
-git reset 回退版本   
+git reset HEAD [file] 把暂存区的修改回退到工作区
+git reset --hard HEAD 回退版本
 - HEAD 当前版本  
 - HEAD^  上一个版本
 - HEAD^^  上上一个版本
@@ -76,7 +77,29 @@ git reset 回退版本
 总之，就是让这个文件回到最近一次git commit或git add时的状态。
 ```
 
+<br/>
+
+>删除文件  
+>**git rm [file]**
+
+```
+确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit。
+
+用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。
+```
+
+<br/>
 
 
+>远程操作：关联 - 克隆  
+>**git remote add origin**  
+>**git clone**
+
+```
+git remote add origin 与已有的本地仓库与之关联
+git clone 从远程库克隆
+```
+
+<br/>
 
 
