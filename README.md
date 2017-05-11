@@ -8,4 +8,33 @@
 创建版本库
 命令把这个目录变成Git可以管理的仓库
 
->
+>**git add**  
+>**git add** .  
+>**git add** -u
+
+把文件添加到暂存区  
+git add [file] [file] 提交指定单个 或多个 文件  
+git add . 提交当前目录下所有未跟踪的文件  
+git add -u 在仓库任务目录下提交所有未跟踪的文件
+
+>**git commit -m "content"**
+
+文件的最后提交 -m 是提交说明 必须写
+
+>**git status**  
+>**git diff**
+
+git status 时刻掌握仓库当前的状态  
+git diff 查看修改的内容 
+
+
+>**git log**  
+>**git reset --hard HEAD^**
+
+git log查看提交日志  
+
+git reset 回退版本   
+*HEAD 当前版本  
+*HEAD^
+
+
