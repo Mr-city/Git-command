@@ -66,7 +66,7 @@ git reset 回退版本
 
 <br/>
 
->撤销修改  
+><font style="color:#1b9c4b">撤销修改</font>  
 >**git checkout -- [file]** 
 
 ```
