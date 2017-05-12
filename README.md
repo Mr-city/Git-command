@@ -118,6 +118,6 @@ git branch   查看分支
 git branch dev 创建一个dev分支
 git checkout dev 切换到dev分支
 git checkout -b dev 简写：创建并切换到dev分支
-git branch -d dev 删除dev分支
+git branch -d dev 删除dev分devdev支
 冲突线
 ```
