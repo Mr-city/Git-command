@@ -106,4 +106,14 @@ git clone 从远程库克隆
 
 <br/>
 
+>创建分支  
+>**git branch dev**
+>**git checkout dev**  
+>**git checkout -b dev**
 
+```
+git branch   查看分支
+git branch dev 创建一个dev分支
+git checkout dev 切换到dev分支
+git checkout -b dev 简写：创建并切换到dev分支
+```
