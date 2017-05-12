@@ -147,10 +147,13 @@ git log --graph 查看分支合并图
 
 <br/>
 
->创建标签  
+>标签  
 >**git tag v1.0**   
 >**git tag -a v0.1 -m "version 0.1 released" 3628164**  
->**git tag -s v0.2 -m "signed version 0.2 released" fec145a**
+>**git tag -s v0.2 -m "signed version 0.2 released" fec145a**  
+>**git tag -d <tagname>**  
+>**git push origin --tags**
+
 
 ```
 命令git tag <name>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
@@ -160,4 +163,12 @@ git tag -a <tagname> -m "blablabla..."可以指定标签信息；
 git tag -s <tagname> -m "blablabla..."可以用PGP签名标签；
 
 命令git tag可以查看所有标签。
+
+命令git push origin <tagname>可以推送一个本地标签；
+
+命令git push origin --tags可以推送全部未推送过的本地标签；
+
+命令git tag -d <tagname>可以删除一个本地标签；
+
+命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
 ```
