@@ -135,5 +135,7 @@ git log --graph 查看分支合并图
 --no-ff参数，表示禁用Fast forward  
 
 合并要创建一个新的commit，所以加上-m参数，把commit描述写进去
+
 10101001
+
 ```
