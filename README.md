@@ -95,13 +95,19 @@ git reset --hard HEAD 回退版本
 <br/>
 
 
->远程操作：关联 - 克隆  
->**git remote add origin**  
->**git clone**
+>远程操作：关联 - 克隆 - 获取  
+>**git remote add origin **  
+>**git clone**  
+>**git push origin master**  
+>**git fetch**  
+>**git pull**  
 
 ```
-git remote add origin 与已有的本地仓库与之关联
-git clone 从远程库克隆
+git remote add origin [地址]与已有的本地仓库与之关联
+git clone [地址]从远程库克隆
+git push origin master 推送到远程库
+git fetch 相当于是从远程获取最新版本到本地，不会自动merge
+git pull 相当于是从远程获取最新版本并merge到本地
 ```
 
 <br/>
@@ -136,4 +142,22 @@ git log --graph 查看分支合并图
 
 合并要创建一个新的commit，所以加上-m参数，把commit描述写进去
 
+```
+
+
+<br/>
+
+>创建标签  
+>**git tag v1.0**   
+>**git tag -a v0.1 -m "version 0.1 released" 3628164**  
+>**git tag -s v0.2 -m "signed version 0.2 released" fec145a**
+
+```
+命令git tag <name>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+
+git tag -a <tagname> -m "blablabla..."可以指定标签信息；
+
+git tag -s <tagname> -m "blablabla..."可以用PGP签名标签；
+
+命令git tag可以查看所有标签。
 ```
