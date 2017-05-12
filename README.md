@@ -107,9 +107,10 @@ git clone 从远程库克隆
 <br/>
 
 >创建分支  
->**git branch dev**
+>**git branch dev**  
 >**git checkout dev**  
->**git checkout -b dev**
+>**git checkout -b dev**  
+>**git log --graph**  
 >删除分支  
 >**git branch -d dev**
 
@@ -119,5 +120,20 @@ git branch dev 创建一个dev分支
 git checkout dev 切换到dev分支
 git checkout -b dev 简写：创建并切换到dev分支
 git branch -d dev 删除dev分支
+git log --graph 查看分支合并图
+```
 
+<br/>
+
+>分支管理策略  
+>**git merge --no-ff -m "merge with no-ff" dev**  
+
+```
+通常，合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。  
+如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
+  
+--no-ff参数，表示禁用Fast forward  
+
+合并要创建一个新的commit，所以加上-m参数，把commit描述写进去
+11111 2222
 ```
