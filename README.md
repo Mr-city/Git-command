@@ -96,16 +96,16 @@ git reset --hard HEAD 回退版本
 
 
 >远程操作：关联 - 克隆 - 获取  
->**git remote add origin **  
+>**git remote add origin**  
 >**git clone**  
->**git push origin master**  
+>**git push -u origin master**  
 >**git fetch**  
 >**git pull**  
 
 ```
 git remote add origin [地址]与已有的本地仓库与之关联
 git clone [地址]从远程库克隆
-git push origin master 推送到远程库
+git push -u origin master 推送到远程库,延续二次就直接使用git push  
 git fetch 相当于是从远程获取最新版本到本地，不会自动merge
 git pull 相当于是从远程获取最新版本并merge到本地
 ```
